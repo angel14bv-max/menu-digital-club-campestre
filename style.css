@@ -1,0 +1,677 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner img{
+    width: 100%;
+    display: block;
+}
+
+.titulo{
+    background: linear-gradient(to bottom, #0B3D91 80%, rgba(11,61,145,0.2) 100%);
+    color: white;
+    text-align: center;
+    padding: 28px 20px;
+}
+
+.titulo h1{
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+.buscador{
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+}
+
+.buscador input{
+    width: 85%;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+}
+.categorias{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 25px;
+}
+
+.categoria{
+    background: white;
+    height: 130px;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.categoria{
+    flex-direction: column;
+}
+
+.categoria img{
+    width: 95px;
+    margin-bottom: 8px;
+}
+.icono-grande{
+    width: 120px !important;
+}
+.categoria.activa{
+    background: #0B3D91;
+    color: white;
+}
+.categoria.activa img{
+    filter: brightness(0) invert(1);
+}
+.especialidad{
+    padding: 25px;
+}
+
+.especialidad h2{
+    color: #0B3D91;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-especial{
+    background: #0B3D91;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 85%;
+    margin: 30px auto;
+
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.texto-especial{
+    width: 60%;
+}
+
+.texto-especial h2{
+    margin-bottom: 25px;
+}
+
+.texto-especial h3{
+    margin-bottom: 20px;
+}
+
+.lado-derecho{
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.foto-especial{
+    width: 230px !important;
+    height: 180px !important;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.lado-derecho span{
+    font-size: 24px;
+    margin-top: 15px;
+}
+.menu-platillos{
+    padding: 25px;
+}
+
+.menu-platillos h2{
+    color: #0B3D91;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.platillo{
+    width:100%;
+    min-height:160px;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:25px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+
+.texto-platillo{
+    width: 65%;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.texto-platillo h3{
+    color: #0B3D91;
+    font-size: 22px;
+}
+
+
+.texto-platillo p{
+    color: #555;
+    margin-top: 10px;
+
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.texto-platillo span{
+    align-self: flex-end;
+
+    color: #0B3D91;
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-top: 20px;
+}
+
+.platillo img{
+    width: 180px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.precio{
+    margin-left:auto;
+    font-size:25px;
+    font-weight:bold;
+}
+
+/* ---------- BEBIDAS ---------- */
+
+.bebidas{
+    padding: 25px;
+}
+
+.bebidas h2{
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.grupo-bebidas{
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.grupo-bebidas h3{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #28385c;
+}
+
+.bebida-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.bebida-item h4{
+    font-size: 20px;
+    color: #28385c;
+}
+
+.bebida-item p{
+    font-size: 15px;
+}
+
+.bebida-item span{
+    font-size: 22px;
+    font-weight: bold;
+    color: #28385c;
+}
+
+body{
+    background-image: 
+    linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,0.93)),
+    url("img/patron.png");
+
+    background-size: 350px;
+    background-repeat: repeat;
+}
+
+.platillo{
+    background-image:
+    linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)),
+    url("img/patron.png");
+
+    background-size: 250px;
+    background-repeat: repeat;
+}
+
+/* MARCO AZUL TARJETAS */
+
+.platillo{
+    border: 5px solid #0B3D91 !important;
+}
+
+/* TIPOGRAFÍAS DEL MENÚ */
+
+h2{
+    font-family: Georgia, serif;
+    font-size: 36px;
+    color: #0B3D91;
+}
+
+h3{
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+p{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.precio{
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* CATEGORÍAS FLOTANTES */
+
+.categorias{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(8px);
+
+    padding: 8px;
+
+    transition: transform .4s ease;
+}
+
+/* tamaño compacto de categorías */
+
+.categorias .categoria{
+    height: 90px;
+    padding: 6px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.categorias img{
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+
+.categorias p{
+    font-size: 14px;
+    text-align: center;
+}
+
+/* DESPEDIDA FINAL */
+
+.despedida{
+    margin-top: 50px;
+    padding-bottom: 45px;
+    text-align: center;
+
+    background: rgba(255,255,255,0.45);
+    backdrop-filter: blur(5px);
+
+    font-family: Georgia, serif;
+}
+
+
+.despedida h2{
+    background: linear-gradient(90deg, #001b60, #006bd6);
+
+    color: white;
+
+    padding: 25px;
+
+    font-size: 40px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+
+    margin-bottom: 30px;
+}
+
+
+.despedida p{
+    font-size: 22px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+
+    color: #001b60;
+}
+
+
+.despedida span{
+    display: block;
+
+    margin-top: 15px;
+
+    font-size: 17px;
+    font-style: italic;
+
+    color: black;
+}
+
+@media (max-width: 600px){
+
+    header{
+        height: auto;
+    }
+
+    header h1{
+        font-size: 35px;
+        padding: 20px;
+    }
+
+
+    /* Categorías */
+    .categorias{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .categoria{
+        height: 100px;
+        padding: 10px;
+    }
+
+    .categoria img{
+        width: 35px;
+    }
+
+    .categoria p{
+        font-size: 14px;
+    }
+
+
+    /* Tarjetas */
+    .platillo{
+        width: 90%;
+        min-height: 170px;
+        padding: 15px;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+
+    .platillo img{
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+
+
+    .platillo h3{
+        font-size: 22px;
+    }
+
+
+    .platillo p{
+        font-size: 16px;
+    }
+
+
+    .precio{
+        font-size: 22px;
+        margin-left: auto;
+    }
+
+
+    /* Despedida */
+    .despedida h2{
+        font-size: 35px;
+        padding: 15px;
+    }
+
+    .despedida h3{
+        font-size: 22px;
+    }
+
+    .despedida p{
+        font-size: 18px;
+    }
+
+}
+
+/* ===========================
+   VERSION CELULAR
+=========================== */
+
+@media (max-width:600px){
+
+/* ---------- ENCABEZADO ---------- */
+
+.titulo h1{
+    font-size:32px;
+    line-height:1.2;
+    padding:15px;
+}
+
+.banner img{
+    width:100%;
+    display:block;
+}
+
+.buscador input{
+    width:92%;
+}
+
+/* ---------- CATEGORIAS ---------- */
+
+.categorias{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    padding:12px;
+    margin-bottom:20px;
+}
+
+.categoria{
+    width:100%;
+    height:95px;
+}
+
+.categoria img{
+    width:30px;
+    height:30px;
+}
+
+/* ---------- ESPECIALIDAD ---------- */
+
+.especialidad{
+    padding:15px;
+}
+
+.tarjeta-especial{
+
+    width:100%;
+    margin:0 auto;
+
+    background:#0B3D91;
+    border-radius:20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px;
+}
+
+.texto-especial{
+    width:52%;
+}
+
+.texto-especial h2{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.texto-especial h3{
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.texto-especial p{
+    font-size:14px;
+    line-height:1.35;
+}
+
+.lado-derecho{
+    width:42%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.foto-especial{
+
+    width:145px !important;
+    height:110px !important;
+
+    object-fit:cover;
+    border-radius:18px;
+}
+
+.lado-derecho span{
+    margin-top:10px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* ---------- TARJETAS CON FOTO ---------- */
+
+.platillo.foto{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:110px 1fr 85px;
+
+    gap:12px;
+
+    padding:15px;
+
+    align-items:center;
+}
+
+.platillo.foto img{
+
+    width:110px;
+    height:110px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+}
+
+.datos-platillo h3{
+
+    font-size:16px;
+    line-height:1.1;
+}
+
+.datos-platillo p{
+
+    font-size:13px;
+    line-height:1.2;
+
+    margin-top:6px;
+}
+
+.platillo.foto .precio{
+
+    font-size:20px;
+
+    margin:0;
+
+    text-align:right;
+
+    white-space:nowrap;
+
+    margin-right:12px;
+}
+
+/* ---------- TARJETAS TEXTO ---------- */
+
+.platillo.texto{
+
+    width:100%;
+
+    padding:15px;
+}
+
+.platillo.texto h3{
+
+    font-size:18px;
+}
+
+.platillo.texto p{
+
+    font-size:14px;
+}
+
+.platillo.texto .precio{
+
+    font-size:22px;
+}
+
+/* ---------- DESPEDIDA ---------- */
+
+.despedida h2{
+
+    font-size:28px;
+    padding:18px;
+}
+
+.despedida p{
+
+    font-size:18px;
+}
+
+}
